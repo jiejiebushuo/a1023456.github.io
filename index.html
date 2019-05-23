@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://togetherjs.com/togetherjs-min.js"></script>
+<title>领路导航--水深危险</title>
+<!--种下希望,辛勤灌溉,等待收获.-->
+<style>
+	/*by xiaocong   xiepinxi@gmail.com */
+	body{ padding:0; margin:0; background:#CBE9CD url(images/superhero-white-bkg.gif) no-repeat 100px 100px;}
+	ul{ padding:0; margin:0;}
+	a{}
+	.dom{max-width:800px;margin-top:30px; position:relative; margin-left:auto; margin-right:auto;}
+	.shui{ /*display:none;*/width:800px; height:600px; position:absolute; top:0px; left:0px; background:url(images/no.jpg) 3px 3px no-repeat;border:2px dashed #81b156;padding:3px;  cursor:pointer;}
+	.shui img{}
+	.he{display:none;background:#fff; padding:17px;}
+	.he h1,.he h1 a{font-size:18px; font-weight:400;color:#81b156; text-decoration:none;}
+	.he h1{}
+	h2{color:#81b156; margin:0; padding:0; margin-top:20px; color:#fff;}
+	.hang a{color:#0360AF; text-decoration:none; width:130px; margin:3px;display:inline-block; line-height:20px;}
+	.hang a:hover{ text-decoration:underline;}
+	.hang{font-size:14px; display:block; overflow:hidden; zoom:1;}
+	.hang li{ width:130px; overflow:hidden; zoom:1; float:left;}
+	.back a,.back span{display:inline-block; background:#81b156; margin-right:15px; line-height:30px; padding:0 10px; color:#fff; text-align:center; text-decoration:none; margin-top:30px; cursor:pointer;}
+	.back{}
+	#mydouban{ margin-top:20px; display:none;}
+	.doul{ margin-bottom:10px;}
+</style>
+</head>
+<body>
+<div class="dom">
+    <div class="he" id="he">
+    	<h1>
+            <a href="http://www.shiziban.com/" target="_new">水</a>。<a href="http://site.douban.com/110568/" target="_new">设计</a>。<a href="http://www.08nm.com/" target="_new">生活</a>。
+            <br />
+            <a href="http://www.shiziban.com/" target="_new">Water</a>.<a href="http://site.douban.com/110568/" target="_new">Design</a>.<a href="http://www.08nm.com/" target="_new">Lives</a>.
+        </h1>
+        <div>
+        	<h2>走不出</h2>
+        	<ul class="hang">
+            	<li><a href="http://www.08nm.com/forum-90-1.html" target="_new">青春</a></li>
+                <li><a href="http://linglu.sinaapp.com/tool/wan/wan.html" target="_new">千千万￥</a></li>
+                <li><a href="http://www.shiziban.com/" target="_new">水</a></li>
+                <li><a href="http://site.douban.com/110568/" target="_new">设计</a></li>
+                <li><a href="http://www.08nm.com/" target="_new">生活</a></li>
+				<li><a href="http://1.5656t.com/" target="_new">清醒自主</a></li>                  
+                <li><a href="http://563946080.qzone.qq.com/" target="_new">Qzone</a></li>
+                <li><a href="http://www.xihami.com/" target="_new">麦田</a></li>
+                <li><a href="http://www.wxxing.com/" target="_new">日记</a></li>
+                <li><a href="http://www.5656t.com/" target="_new">日记</a></li>                
+                <!--li><a href="http://wososo.duapp.com/app/jdso/" title="京东卖家商品
+                搜索结果排名查询-看看我家商品排多少名" target="_new">京东商搜</a></li-->
+                <li><a href="http://linglu.sinaapp.com/demo/" title="成为历史的纪念.也许能发挥点余热" target="_new">纪念</a></li>
+                <li><a href="http://linglu.sinaapp.com/demo/kunshan/" target="_new">Weibo APi</a></li>
+                <li><a href="http://148935.shop.ename.com/" target="_new">域名</a></li>
+				<li><a href="http://sae.sina.com.cn/?m=front" target="_new">云计算</a></li>				
+            </ul>
+			<h2>---微信---</h2>
+        	<ul class="hang">
+            	<li><a href="http://mp.weixin.qq.com/profile?src=3&timestamp=1472809259&ver=1&signature=1m*Og3uYJ4g0vOwpqC*THzM7qkUDEh0ztPDhC8MVG2eksG3-64aE4UhumAIQnFilOC0528SEFEt9F2SZFx*pKw==" target="_new" title="微信号：OnionNote">小葱</a></li>
+                <li><a href="http://mp.weixin.qq.com/profile?src=3&timestamp=1472809406&ver=1&signature=3Q4ZAedXmQd3kL10*yqPMRMqECzl3YNplfelnSZCdQXXYh0IAvAI5H0dOnHEv*9iEGWtEr4M1q5qGVUR57Eb7g==" target="_new" title=“微信号: wx_08nm”>柠檬大学</a></li>
+                <li><a href="http://mp.weixin.qq.com/profile?src=3&timestamp=1472809449&ver=1&signature=inT9GShbkfDYPYL22cdr7RdgKBn6aVaetwO6VDvqjUb3HSEomZ3bQRuoc1Ff3BXHAlWRuGd3ETx7d5jzHc8*Hg==" target="_new" title="微信号: xiaonongye">农民</a></li>
+            </ul>
+            <h2>---关注吧微薄---</h2>
+        	<ul class="hang">
+            	<li><a href="http://www.weibo.com/onion" target="_new">小葱</a></li>
+                <li><a href="http://weibo.com/u/1935708483" target="_new">柠檬大学</a></li>
+                <li><a href="http://weibo.com/sylviachang521" target="_new">張艾嘉_</a></li>
+                <li><a href="http://weibo.com/haoxinqingv" target="_new">我爱好心情v</a></li>
+                <li><a href="http://weibo.com/u/2642477511" target="_new">安意如小妹</a></li>
+                <li><a href="http://weibo.com/renrenliu" target="_new">劉若英_reneliu</a></li>
+                <li><a href="http://weibo.com/sdyishui" target="_new">沂水旅游</a></li>
+                <li><a href="http://weibo.com/xschg" target="_new">沂水雪山彩虹谷</a></li>
+                <li><a href="http://weibo.com/u/1749868495" target="_new">喜乐文化传播</a></li>
+            </ul>
+            <div class="back">
+            	<span id="back">水太深,回家吧!</span>
+                <a href="http://douban.fm/" target="_new">听听音乐</a>
+                <a href="http://www.qq.com/" target="_new">QQ.com</a>
+                <a href="http://www.iqiyi.com/" target="_new">iQiYi</a>
+                <a href="http://book.douban.com/mine" target="_new">豆瓣酱</a>
+                <a href="#" onclick="TogetherJS(this); return false;" target="_new">Start TogetherJS</a>
+            </div>
+            <div id="mydouban">
+            	<div class="doul"><script type="text/javascript" src="http://www.douban.com/service/badge/ixiaocong/?show=dolist&amp;n=10&amp;columns=10&amp;hidelogo=yes&amp;hideself=yes&amp;cat=book|site" ></script></div>
+                <div class="doul"><script type="text/javascript" src="http://www.douban.com/service/badge/ixiaocong/?show=collection&amp;n=10&amp;columns=10&amp;hidelogo=yes&amp;hideself=yes" ></script></div>
+            </div>
+        </div>
+    </div>
+    <div class="shui" id="shui"></div>
+</div>
+<script>
+	document.getElementById("shui").onclick = function(){
+		document.getElementById("shui").style.display = "none";
+		document.getElementById("mydouban").style.display = "block";
+		document.getElementById("he").style.display = "block";
+	}
+	document.getElementById("back").onclick = function(){
+		document.getElementById("shui").style.display = "block";
+		document.getElementById("he").style.display = "none";
+		return false;
+	}
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18179331-7']);
+  _gaq.push(['_setDomainName', 'sinaapp.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<div>
+<div style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F084b36909d9b860d1b48051890d66454' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+</div>
+</body>
+</html>
